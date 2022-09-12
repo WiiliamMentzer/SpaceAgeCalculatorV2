@@ -2,11 +2,11 @@
   "name": "spaceracev2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "build": "webpack --mode=development",
     "start": "npm run build && webpack-dev-server --open --mode=development",
-    "lint": "eslint src/*/.js",
+    "lint": "eslint src/*.js",
     "test": "jest --coverage"
   },
   "keywords": [],

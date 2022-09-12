@@ -15,7 +15,6 @@ export default class SpaceAge {
     } else if (this.planet === "Jupiter") {
       planetAge = Math.round(this.age / 11.862);
     }
-    // this.age = planetAge;
     return planetAge;
   }
 
@@ -33,6 +32,5 @@ export default class SpaceAge {
       let timeLeft = 7 - this.age;
       return timeLeft;
     }
-    // this.planet = timeLeft;
   }
 }
