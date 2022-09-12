@@ -1,7 +1,7 @@
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/styles.css'
-import 
+import SpaceAge from './spacecalculate';
 
 function formSubmit(event){
 	event.preventDefault();
@@ -11,6 +11,7 @@ function formSubmit(event){
   let spaceAge;
   spaceAge = new SpaceAge(age, planet);
   spaceAge.getAge();
+  spaceAge.getTimeDeath();
 
 }
 
