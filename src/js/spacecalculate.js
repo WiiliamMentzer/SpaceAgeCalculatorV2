@@ -5,8 +5,8 @@ export default class SpaceAge {
   }
 
   getAge() {
-    let ageConversion = null;
-
-    return this.age + this.planet;
+    let ageConversion = this.age + " " + this.planet
+    return ageConversion;
+    // return this.age + this.planet;
   }
 }
