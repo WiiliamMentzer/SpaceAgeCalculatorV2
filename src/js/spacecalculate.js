@@ -1,27 +1,23 @@
 export default class SpaceAge {
   constructor(age, planet) {
     this.age = age;
-    this.planet = planet
+    this.planet = planet;
   }
 
-  getAge() {
+  getPlanetAge() {
     let planetAge = null;
     if (this.planet === "Mercury") {
       planetAge = Math.round(this.age / 0.2408);
-      return planetAge;
     } else if (this.planet === "Venus") {
       planetAge = Math.round(this.age / 0.61562);
-      return planetAge;
     } else if (this.planet === "Mars") {
       planetAge = Math.round(this.age / 1.8809);
-      return planetAge;
     } else if (this.planet === "Jupiter") {
       planetAge = Math.round(this.age / 11.862);
-      return planetAge;
-    };
-    this.age = planetAge;
-    return this.age;
-  };
+    }
+    // this.age = planetAge;
+    return planetAge;
+  }
 
   getTimeDeath() {
     if (this.planet === "Mercury") {
@@ -36,7 +32,7 @@ export default class SpaceAge {
     } else if (this.planet === "Jupiter") {
       let timeLeft = 7 - this.age;
       return timeLeft;
-    };
-    this.planet = timeLeft;
-  };
+    }
+    // this.planet = timeLeft;
+  }
 }

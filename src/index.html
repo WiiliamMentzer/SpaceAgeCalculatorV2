@@ -11,7 +11,7 @@
 			<h3>Please enter an age and select a planet to see the represented age.</h3>
 			<form id="user-input">
 				<label for="age-input"> Age:</label>
-				<input type="age=input" name="age" id="age">
+				<input type="number" name="age-input" id="age">
 				<select name="planets" id="planet-selector">
 					<option value=""> -- Please Choose an Option --</option>
 					<option value="Mercury">Mercury</option>
@@ -22,7 +22,8 @@
 				<button type="submit">Lets calculate that age!</button>
 			</form>
 		</div>
-    <div class="result-display" id="result-box">
+    <div>
+      <p id="result-box"></p>
     </div>
   </body>
 </html>
