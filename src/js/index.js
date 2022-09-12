@@ -3,19 +3,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import SpaceAge from './spacecalculate';
 
-function displayAges(deathTracker, spaceAge, planet) {
+function displayAges(deathTracker, convertedAge, planet) {
   let timeToDeath = deathTracker;
-  let planetAge = spaceAge;
+  let planetAge = convertedAge;
   let planetChoice = planet;
-  const ageResult = document.getElementById("age-result");
-  const planetChosen1 = document.getElementById("planet-choice1");
-  const planetChosen2 = document.getElementById("planet-choice2");
-  const timeLeft = document.getElementById("time-left");
 
-  ageResult.innerHTML = planetAge;
-  planetChosen1.innerHTML = planetChoice;
-  planetChosen2.innerHTML = planetChoice;
-  timeLeft.innerHTML = timeToDeath;
+  const ageDisplay = document.getElementById("age-display");
+  const timeRemainder = document.getElementById("time-remainder");
+
+  if (Math.sign(timeToDeath) === -1) {
+    ageDisplay.innerHTML = "You are currently " + planetAge + " years old on the planet " + planetChoice + ".";
+    timeRemainder.innerHTML = "You have died " + Math.abs(timeToDeath) + " years ago on the planet " + planetChoice + ".";
+  } else {
+    ageDisplay.innerHTML = "You are currently " + planetAge + " years old on the planet " + planetChoice;
+    timeRemainder.innerHTML = "You have " + timeToDeath + " years left on the planet " + planetChoice + " until your inevitable DEATH.";
+  }
 
   document.getElementById("display-box").removeAttribute("class");
 }

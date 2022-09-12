@@ -1,3 +1,8 @@
 .hidden {
   display: none;
 }
+
+.card {
+  margin: 4rem;
+  text-align: center;
+}

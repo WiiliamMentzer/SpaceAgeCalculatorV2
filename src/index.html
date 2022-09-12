@@ -4,27 +4,36 @@
     <title>SpaceAgeCalculator</title>
   </head>
   <body>
-		<div class="top-bar">
-			<h1>Space Age Calculator</h1>
+		<div class="container">
+      <div class="card">
+        <h1>Space Age Calculator</h1><br>
+        <h3>Lets say theoretically the average life span of an earthly human being is 80 years of age.</h3><br>
+      </div>
 		</div>
-		<div class="search-box">
-			<h3>Please enter an age and select a planet to see the represented age.</h3>
-			<form id="user-input">
-				<label for="age-input"> Age:</label>
-				<input type="number" name="age-input" id="age">
-				<select name="planets" id="planet-selector">
-					<option value=""> -- Please Choose an Option --</option>
-					<option value="Mercury">Mercury</option>
-					<option value="Venus">Venus</option>
-					<option value="Mars">Mars</option>
-					<option value="Jupiter">Jupiter</option>
-				</select>
-				<button type="submit">Lets calculate that age!</button>
-			</form>
-		</div>
-    <div class="hidden" id="display-box">
-      <p>You are currently <span id="age-result"></span> years old on the planet <span id="planet-choice1"></span>.</p>
-      <p>You have <span id="time-left"></span> years left on the planet <span id="planet-choice2"></span> until your inevitable DEATH.</p>
+    <div class="container">
+      <div class="card">
+        <h4>Please enter your earthly age and select a planet to see the represented age of the planet you will be on.</h4><br>
+        <form id="user-input">
+          <label for="age-input"> Earthly Age:</label>
+          <input type="number" name="age-input" id="age">
+          <select name="planets" id="planet-selector">
+            <option value=""> -- Please Choose a planet --</option>
+            <option value="Mercury">Mercury</option>
+            <option value="Venus">Venus</option>
+            <option value="Mars">Mars</option>
+            <option value="Jupiter">Jupiter</option>
+          </select><br>
+          <button type="submit">Lets calculate that age!</button><br>
+        </form>
+      </div><br>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div id="display-box">
+          <p id="age-display"></p>
+          <p id="time-remainder"></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
