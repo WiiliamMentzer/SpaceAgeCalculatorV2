@@ -1,6 +1,7 @@
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/styles.css'
+import 
 
 function formSubmit(event){
 	event.preventDefault();
@@ -9,6 +10,7 @@ function formSubmit(event){
 	let planet = document.getElementById("").value;
   let spaceAge;
   spaceAge = new SpaceAge(age, planet);
+  spaceAge.getAge();
 
 }
 
