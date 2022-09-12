@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SpaceAgeCalculator</title>
+  </head>
+  <body>
+		<div class="top-bar">
+			<h1>Space Age Calculator</h1>
+		</div>
+		<div class="search-box">
+			<h3>Please enter an age and select a planet to see the represented age.</h3>
+			<form id="user-input">
+				<label for="age-input"> Age:</label>
+				<input type="age=input" name="age" id="age">
+				<select name="planets" id="planet-selector">
+					<option value=""> -- Please Choose an Option --</option>
+					<option value="Mercury">Mercury</option>
+					<option value="Venus">Venus</option>
+					<option value="Mars">Mars</option>
+					<option value="Jupiter">Jupiter</option>
+				</select>
+				<button type="submit">Lets calculate that age!</button>
+			</form>
+		</div>
+    <div class="result-display hidden" id="result-box">
+    </div>
+  </body>
+</html>

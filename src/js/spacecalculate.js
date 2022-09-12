@@ -1,10 +1,12 @@
 export default class SpaceAge {
-  constructor(age, spaceAgePost) {
+  constructor(age, planet) {
     this.age = age;
-    this.spaceAgePost = spaceAgePost;
+    this.planet = planet
   }
 
   getAge() {
-    return this.age * this.spaceAgePost;
+    let ageConversion = null;
+
+    return this.age + this.planet;
   }
 }
